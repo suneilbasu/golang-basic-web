@@ -17,7 +17,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func addHandler(w http.ResponseWriter, r *http.Request) {
-
+	names = append(names, "Fred")
+	fmt.Fprintf(w, "%d", len(names))
 }
 
 func main() {
